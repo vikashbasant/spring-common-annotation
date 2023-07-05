@@ -15,6 +15,7 @@ public class Client {
         // Fetch the object through bean id="collegeBean"
         College college = context.getBean("collegeBean", College.class);
         System.out.println(college);
+        college.test();
 
     }
 }
