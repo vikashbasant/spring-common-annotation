@@ -12,7 +12,7 @@ public class Client {
 
 
         // Fetch the object through bean id="collegeBean"
-        College college = context.getBean("collegeBean", College.class);
+        College college = context.getBean("colBean", College.class);
         System.out.println(college);
         college.test();
 
