@@ -6,10 +6,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class College {
 
-    private final Principal principal;
+    private Principal principal;
 
-    // parameterized constructor:
-    public College(Principal principal) {
+
+    // setter method:
+    public void setPrincipal(Principal principal) {
         this.principal = principal;
     }
 
