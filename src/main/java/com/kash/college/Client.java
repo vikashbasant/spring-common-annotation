@@ -13,7 +13,7 @@ public class Client {
 
         // Fetch the object through bean id="collegeBean"
         College college = context.getBean("collegeBean", College.class);
-        System.out.println(college);
+        System.out.println("This college object created by spring is: " + college);
         college.test();
 
     }
