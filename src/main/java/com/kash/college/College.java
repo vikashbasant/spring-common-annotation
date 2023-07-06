@@ -19,7 +19,6 @@ public class College {
     @Qualifier("scienceTeacher")
     private Teacher teacher;
 
-
     public void test() {
         System.out.println("This is: " + this.collegeName);
         this.principal.principalInfo();
