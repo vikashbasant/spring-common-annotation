@@ -2,9 +2,19 @@ package com.kash.college;
 
 import org.springframework.stereotype.Component;
 
-@Component // =>> By-default bean for the same class but camleCase notation:
+
+@Component
 public class College {
+
+    private final Principal principal;
+
+    // parameterized constructor:
+    public College(Principal principal) {
+        this.principal = principal;
+    }
+
     public void test() {
+        this.principal.principalInfo();
         System.out.println("Testing this methods");
     }
 }

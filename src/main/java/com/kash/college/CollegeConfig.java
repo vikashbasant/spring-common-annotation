@@ -1,10 +1,18 @@
 package com.kash.college;
 
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan("com.kash.college")
 public class CollegeConfig {
 
+    @Bean
+    public Principal principalBean() {
+        return new Principal();
+    }
+
+    @Bean
+    public College collegeBean() {
+        return new College(principalBean());
+    }
 }
