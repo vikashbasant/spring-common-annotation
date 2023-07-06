@@ -8,23 +8,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class College {
 
-
+    @Autowired
     private Principal principal;
-
-
-    private Teacher teacher;
 
     @Autowired
     @Qualifier("scienceTeacher")
-    public void setTeacher(Teacher teacher) {
-        this.teacher = teacher;
-    }
+    private Teacher teacher;
 
-    @Autowired
-    // setter method:
-    public void setPrincipal(Principal principal) {
-        this.principal = principal;
-    }
 
     public void test() {
         this.principal.principalInfo();
