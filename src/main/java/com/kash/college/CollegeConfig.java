@@ -1,12 +1,13 @@
 package com.kash.college;
 
-import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+@ComponentScan(basePackages = "com.kash.college")
 public class CollegeConfig {
 
-    @Bean
+    /*@Bean
     public Teacher scienceTeacherBean() {
         return new ScienceTeacher();
     }
@@ -27,5 +28,5 @@ public class CollegeConfig {
         college.setPrincipal(principalBean());
         college.setTeacher(scienceTeacherBean());
         return college;
-    }
+    }*/
 }

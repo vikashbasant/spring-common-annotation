@@ -1,5 +1,8 @@
 package com.kash.college;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class MathTeacher implements Teacher {
     @Override
     public void teach() {
